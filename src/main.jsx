@@ -1,15 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import Home from "./views/home";
 import View1 from "./views/view1";
 import View2 from "./views/view2";
 
+import injectContext from "./store/appContext";
+
 import "./index.css";
 
-ReactDOM.render(
+const Main = () => (
   <React.StrictMode>
     <Router>
       <Navbar />
@@ -19,7 +22,11 @@ ReactDOM.render(
         <Route path="/view2" element={<View2 />} />
         <Route element={<h1>Not Found</h1>} />
       </Routes>
+      <Footer />
     </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
+
+const MainWithContext = injectContext(Main);
+
+createRoot(document.getElementById("root")).render(<MainWithContext />);
