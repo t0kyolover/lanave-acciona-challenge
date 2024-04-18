@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 
 import Home from "./views/home";
 import Navbar from "./components/navbar";
 
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Router>
@@ -16,5 +16,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<h1>Not Found</h1>} />
       </Routes>
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
