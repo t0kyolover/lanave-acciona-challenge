@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
     <div className="row">
-      <div className="ms-5">
+      <div className="countainer-fluid ms-5">
         <h1>Home</h1>
       <p>Welcome to the home page!</p>
       <Counter />
