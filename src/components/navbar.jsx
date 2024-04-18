@@ -1,12 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="https://www.acciona.com/es/" target="_blank">
-          <img src="src/assets/Acciona_logo.svg" className="img-fluid" style={{maxHeight: "30px"}}/>
-        </a>
+        <div>
+          <Link to="/" className="navbar-brand">
+            <img
+              src="src/assets/Acciona_logo.svg"
+              className="img-fluid"
+              style={{ maxHeight: "30px" }}
+            />
+          </Link>
+          <Link to="/view1">
+            <button className="btn">To another page</button>
+          </Link>
+          <Link to="/view2">
+            <button className="btn">Yet another page</button>
+          </Link>
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -19,7 +33,7 @@ function Navbar() {
         </button>
         <div
           className="offcanvas offcanvas-end"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
