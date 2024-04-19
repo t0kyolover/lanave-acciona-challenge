@@ -14,10 +14,10 @@ function Navbar() {
             />
           </Link>
           <Link to="/view1">
-            <button className="btn">To another page</button>
+            <button className="btn">Residuos</button>
           </Link>
           <Link to="/view2">
-            <button className="btn">Yet another page</button>
+            <button className="btn">Desmantelamiento</button>
           </Link>
         </div>
 
@@ -38,9 +38,6 @@ function Navbar() {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
-            </h5>
             <button
               type="button"
               className="btn-close"
@@ -55,11 +52,6 @@ function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
-              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -68,25 +60,27 @@ function Navbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Qué puedo hacer?
                 </a>
                 <ul className="dropdown-menu">
                   <li>
+                    <Link className="dropdown-item" to="/view3">
+                      Publicar subasta
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/view4">
+                      Pujar
+                    </Link>
+                  </li>
+                  <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Conocer partners
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
+                      Conocer industrias
                     </a>
                   </li>
                 </ul>

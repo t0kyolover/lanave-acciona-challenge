@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 px-3">
+    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 fixed-bottom">
       <div className="col-md-4 d-flex">
         <a
           href="https://www.acciona.com/es/"

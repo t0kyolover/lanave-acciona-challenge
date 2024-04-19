@@ -8,6 +8,8 @@ import Footer from "./components/footer";
 import Home from "./views/home";
 import View1 from "./views/view1";
 import View2 from "./views/view2";
+import View3 from "./views/view3";
+import View4 from "./views/view4";
 
 import injectContext from "./store/appContext";
 
@@ -17,12 +19,14 @@ import "./styles/navbar2.css";
 const Main = () => (
   <React.StrictMode>
     <Router>
-      <Navbar2 />
+      <Navbar />
       {/*<Navbar />*/}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/view1" element={<View1 />} />
         <Route path="/view2" element={<View2 />} />
+        <Route path="/view3" element={<View3 />} />
+        <Route path="/view4" element={<View4 />} />
         <Route element={<h1>Not Found</h1>} />
       </Routes>
       <Footer />
