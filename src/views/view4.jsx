@@ -13,72 +13,86 @@ function View4() {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center">
-      <ul class="list-group">
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">7</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">0</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">4</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">3</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">10</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">1</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">7</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subasta</div>
-      Content for list item
-    </div>
-    <span class="badge text-bg-primary rounded-pill">94</span>
-  </li>
-</ul>
+    <div className="container">
+      <div className="row">
+        <h1 className="text-primary-emphasis">Pujando ahora</h1>
+      </div>
+      <div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 1{" "}
+                <span class="badge rounded-pill text-bg-success">55</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 4568</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 2{" "}
+                <span class="badge rounded-pill text-bg-success">63</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 9895</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 3{" "}
+                <span class="badge rounded-pill text-bg-success">75</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 4562</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 4{" "}
+                <span class="badge rounded-pill text-bg-success">45</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 8956</i>
+            </div>
+          </div>
+        </div>
+      </div><div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 5{" "}
+                <span class="badge rounded-pill text-bg-success">56</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 2335</i>
+            </div>
+          </div>
+        </div>
+      </div><div className="row m-3">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex flex-column">
+            <div style={{maxWidth: "25rem"}}>
+              <h2>
+                Subasta 6{" "}
+                <span class="badge rounded-pill text-bg-success">89</span>
+              </h2>
+              <i class="fa-solid fa-dollar-sign text-danger"> 4684</i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

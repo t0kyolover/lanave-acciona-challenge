@@ -70,18 +70,18 @@ function Navbar() {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/view4">
-                      Pujar
+                      Pujar en directo
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/view5">
                       Conocer partners
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/view6">
                       Conocer industrias
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
