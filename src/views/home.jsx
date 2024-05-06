@@ -14,9 +14,7 @@ function Home() {
 
   return (
     <div className="d-flex justify-content-center">
-      
       <img src="src/assets/imagen tierra.png" alt="" />
-    
     </div>
   );
 }
