@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   return (
     <nav className="navbar fixed-top">
@@ -49,7 +50,7 @@ function Navbar() {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/" >
-                  Home
+                  <span data-bs-dismiss="offcanvas">Home</span>
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -65,22 +66,22 @@ function Navbar() {
                 <ul className="dropdown-menu">
                   <li>
                     <Link className="dropdown-item" to="/view3">
-                      Publicar subasta
+                    <span data-bs-dismiss="offcanvas">Publicar subasta</span>
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/view4">
-                      Pujar en directo
+                    <span data-bs-dismiss="offcanvas">Pujar en directo</span>
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/view5">
-                      Conocer partners
+                      <span data-bs-dismiss="offcanvas">Conocer partners</span>
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/view6">
-                      Conocer industrias
+                      <span data-bs-dismiss="offcanvas">Conocer industrias</span>
                     </Link>
                   </li>
                 </ul>
